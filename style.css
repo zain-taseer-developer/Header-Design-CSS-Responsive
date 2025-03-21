@@ -235,6 +235,51 @@ nav ul li a {
   display: none;
 }
 
+/* MAIN Work Ways */
+.work-ways-main {
+  background: #f5f8fd;
+
+}
+
+.work-ways {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1146px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  height: 300px;
+}
+
+.work-way-css {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.work-way-css h1 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 21px;
+  color: rgb(45, 70, 94);
+  font-family: "Nunito", sans-serif;
+}
+
+.work-way-css p {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #212529;
+
+}
+
+.work-way-css svg {
+  height: 40px;
+  width: 40px;
+}
+
 @media screen and (max-width: 1300px) {
   .parent {
     width: 100%;
@@ -303,6 +348,15 @@ nav ul li a {
     align-items: center;
   }
 
+  .work-ways {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+
+  .work-ways {
+    align-content: start;
+    height: 100%;
+  }
 
 }
 
