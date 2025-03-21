@@ -1,0 +1,313 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 62.5% of 16 is 10px   so 1rem will be 10px */
+  font-size: 62.5%;
+  --color1: pink;
+}
+
+.xaviar {
+  position: absolute;
+  width: 90%;
+  background: #ada8a836;
+  margin: auto !important;
+  height: 82vh !important;
+  overflow: scroll;
+  padding: 10px 0px 10px 17px;
+  border-radius: 17px;
+  top: 73px;
+  left: 15px;
+}
+
+.xaviar ul li a {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.xaviar ul li {
+  line-height: 41px;
+}
+
+.logo-part {
+  display: flex;
+  width: 1116px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 1.7rem 0;
+  align-items: center;
+
+  height: 100%;
+
+}
+
+.logo h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2d465e;
+}
+
+.search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  background: #0d4abd;
+  fill: white;
+  padding: 5px 12px;
+  height: 36px;
+  width: 62px;
+  border-radius: 50px;
+  top: 3px;
+  right: 4px;
+}
+
+.search-input {
+  padding: 1.2rem 1.5rem;
+  width: 386px;
+  margin-left: -69px;
+  border-radius: 21px;
+  border: 1px solid #80808033;
+  box-shadow: 5px 3px 22px rgba(0, 0, 0, 0.096);
+}
+
+.search-input::placeholder {
+  font-size: 1.4rem;
+  color: #21252975;
+}
+
+.wooIcons {
+  display: flex;
+  column-gap: 32px;
+  flex-direction: row;
+  position: relative;
+}
+
+.favorate-count {
+  position: absolute;
+  right: 46px;
+  top: -13px;
+  background: #0d4abd;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.cart-count {
+  position: absolute;
+  right: -16px;
+  top: -13px;
+  background: #0d4abd;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.phone {
+  display: flex;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: auto;
+  align-items: center;
+  padding: 6px 0px;
+}
+
+.topbar-bg {
+  background: #f5f8fd;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  gap: 2.9rem;
+}
+
+.currency-usd {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+}
+
+.phone p {
+  font-size: 1.4rem;
+  margin-left: 0.4rem;
+}
+
+.phone p a {
+  text-decoration: none;
+}
+
+.ship-text {
+  font-size: 2rem;
+  color: #23478c;
+}
+
+.ship-text {
+  font-size: 1.2rem;
+  color: #0a4db8;
+  font-weight: 600;
+  width: 439px;
+}
+
+.currency p {
+  font-size: 1.5rem;
+  color: #0a4db8;
+
+}
+
+.language {
+  display: flex;
+  column-gap: 4px;
+  position: relative;
+}
+
+.language p {
+  font-size: 1.5rem;
+  color: #0a4db8;
+}
+
+.lan-drop {
+  position: absolute;
+  top: -6px;
+  right: -22px;
+}
+
+.dollar-sign {
+  font-size: 1.7rem;
+}
+
+.currency-usd .currency-drop {
+  position: relative;
+  top: -5px;
+  right: 6px;
+}
+
+.logo-part-border {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+  height: 91px;
+}
+
+nav {
+  width: 1140px;
+  margin: auto;
+  height: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 39px;
+  margin-left: 15px;
+  align-items: center;
+  height: 100%;
+}
+
+.Navigation-bar {
+  height: 59px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.178);
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.Navigation-bar.hide {
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  .parent {
+    width: 100%;
+    align-content: center;
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .logo-part {
+    width: 100%;
+  }
+
+  .Navigation-bar {
+    border-bottom: 0px;
+  }
+
+  .wooIcons {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  .favorate-count {
+    position: absolute;
+    right: 70px;
+    top: -14px;
+
+    width: 15px;
+    height: 15px;
+
+  }
+
+  .cart-count {
+    position: absolute;
+    right: 30px;
+    top: -17px;
+
+    width: 16px;
+    height: 16px;
+
+  }
+
+  .logo h1 {
+    font-size: 2.6rem;
+    ;
+  }
+
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+@media screen and (min-width: 1300px) {
+  .menu-icon {
+    display: none
+  }
+}
